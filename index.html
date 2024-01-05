@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kant and Company Survey</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #800080;
+            color: white;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #800080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Left-align radio buttons and checkboxes */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kant and Company Survey</h1>
+    </header>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+
+        <label for="aadhar">Aadhar Card Number:</label>
+        <input type="text" id="aadhar" name="aadhar" required>
+
+        <label>Countries to Travel:</label>
+        <input type="checkbox" id="germany" name="countries[]" value="Germany">
+        <label for="germany">Germany</label>
+
+        <input type="checkbox" id="spain" name="countries[]" value="Spain">
+        <label for="spain">Spain</label>
+
+        <input type="checkbox" id="london" name="countries[]" value="London">
+        <label for="london">London</label>
+
+        <input type="checkbox" id="italy" name="countries[]" value="Italy">
+        <label for="italy">Italy</label>
+
+        <label for="passport">Do you have a passport?</label>
+        <input type="radio" id="yesPassport" name="passport" value="yes">
+        <label for="yesPassport">Yes</label>
+
+        <input type="radio" id="noPassport" name="passport" value="no">
+        <label for="noPassport">No</label>
+
+        <label for="freeCash">Do you want free cash?</label>
+        <input type="radio" id="yesFreeCash" name="freeCash" value="yes">
+        <label for="yesFreeCash">Yes</label>
+
+        <input type="radio" id="noFreeCash" name="freeCash" value="no">
+        <label for="noFreeCash">No</label>
+
+        <label for="clothingBrand">Favorite Clothing Brand:</label>
+        <input type="checkbox" id="diesel" name="clothingBrands[]" value="Diesel">
+        <label for="diesel">Diesel</label>
+
+        <input type="checkbox" id="zara" name="clothingBrands[]" value="Zara">
+        <label for="zara">Zara</label>
+
+        <input type="checkbox" id="hm" name="clothingBrands[]" value="HM">
+        <label for="hm">HM</label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>"Collecting information and analyzing lives."</p>
+    </footer>
+
+</body>
+</html>
